@@ -8,7 +8,7 @@
 
     <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="67dp"
+        android:layout_height="wrap_content"
         android:addStatesFromChildren="false"
         android:alwaysDrawnWithCache="false"
         android:background="@drawable/switchbar_background"
@@ -26,15 +26,6 @@
             android:textAppearance="@android:style/TextAppearance.Material.Large"
             android:textColor="?android:attr/textColorPrimary" />
 
-
-        <ImageView
-            android:id="@+id/omni_logo"
-            android:layout_width="48dp"
-            android:layout_height="48dp"
-            android:layout_gravity="center"
-            android:layout_marginEnd="16dp"
-            android:layout_marginStart="@dimen/activity_horizontal_margin"
-            android:src="@drawable/ic_omni_small"/>
     </LinearLayout>
 
     <LinearLayout
