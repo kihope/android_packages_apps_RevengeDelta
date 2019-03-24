@@ -57,28 +57,7 @@
                     android:layout_height="42dp"
                     android:layout_gravity="top|left"
                     android:src="@drawable/ic_rom" />
-
-                <TextView
-                    android:id="@+id/text_current_version_header"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_alignParentTop="true"
-                    android:layout_gravity="top"
-                    android:layout_marginStart="9dp"
-                    android:layout_toEndOf="@+id/curr_ver"
-                    android:text="@string/text_current_version_header_title"
-                    android:textAppearance="@android:style/TextAppearance.Material.Menu"
-                    android:textColor="?android:attr/textColorPrimary" />
-
-                <TextView
-                    android:id="@+id/text_current_version"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_alignStart="@+id/text_current_version_header"
-                    android:layout_below="@+id/text_current_version_header"
-                    android:textAppearance="@android:style/TextAppearance.Material.Small"
-                    android:textColor="?android:attr/textColorPrimary" />
-
+                
                 <TextView
                     android:id="@+id/text_last_checked_header"
                     android:layout_width="match_parent"
