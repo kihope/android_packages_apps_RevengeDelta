@@ -67,7 +67,6 @@ public class MainActivity extends Activity {
     private Button buildNow = null;
     private ImageButton stopNow = null;
     private Button rebootNow = null;
-    private TextView currentVersion = null;
     private TextView lastChecked = null;
     private TextView lastCheckedHeader = null;
     private TextView downloadSizeHeader = null;
@@ -113,7 +112,6 @@ public class MainActivity extends Activity {
         extra = (TextView) findViewById(R.id.text_extra);
         buildNow = (Button) findViewById(R.id.button_build_delta);
         stopNow = (ImageButton) findViewById(R.id.button_stop);
-        currentVersion = (TextView) findViewById(R.id.text_current_version);
         lastChecked = (TextView) findViewById(R.id.text_last_checked);
         lastCheckedHeader = (TextView) findViewById(R.id.text_last_checked_header);
         downloadSize = (TextView) findViewById(R.id.text_download_size);
