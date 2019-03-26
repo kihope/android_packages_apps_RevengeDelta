@@ -450,7 +450,6 @@ public class MainActivity extends Activity {
             MainActivity.this.mSub2.setText(sub2);
             MainActivity.this.mProgressPercent.setText(progressPercent);
             MainActivity.this.updateVersion.setText(updateVersion);
-            MainActivity.this.currentVersion.setText(config.getFilenameBase());
             MainActivity.this.lastChecked.setText(lastCheckedText);
             MainActivity.this.lastCheckedHeader
                 .setText(lastCheckedText.equals("") ? "" : getString(R.string.text_last_checked_header_title));
