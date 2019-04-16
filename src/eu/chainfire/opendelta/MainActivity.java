@@ -69,7 +69,6 @@ public class MainActivity extends Activity {
     private Button rebootNow = null;
     private TextView lastChecked = null;
     private TextView lastCheckedHeader = null;
-    private TextView downloadSizeHeader = null;
     private TextView downloadSize = null;
     private Config config;
     private boolean mPermOk;
@@ -95,7 +94,8 @@ public class MainActivity extends Activity {
             // its icon
             Logger.ex(e);
         }
-        getActionBar().setDisplayOptions(ActionBar.DISPLAY_HOME_AS_UP | ActionBar.DISPLAY_SHOW_TITLE);
+        getActionBar().setDisplayOptions(ActionBar.DISPLAY_HOME_AS_UP);
+        getActionBar().setElevation(0);
 
         UpdateService.start(this);
 
@@ -113,9 +113,9 @@ public class MainActivity extends Activity {
         buildNow = (Button) findViewById(R.id.button_build_delta);
         stopNow = (ImageButton) findViewById(R.id.button_stop);
         lastChecked = (TextView) findViewById(R.id.text_last_checked);
+        getActionBar().setElevation(0);
         lastCheckedHeader = (TextView) findViewById(R.id.text_last_checked_header);
         downloadSize = (TextView) findViewById(R.id.text_download_size);
-        downloadSizeHeader = (TextView) findViewById(R.id.text_download_size_header);
         mProgressPercent = (TextView) findViewById(R.id.progress_percent);
         mProgressEndSpace = findViewById(R.id.progress_end_margin);
 
@@ -444,8 +444,7 @@ public class MainActivity extends Activity {
                         }
                     }
                 }
-            }
-            MainActivity.this.title.setText(title);
+            }MainActivity.this.title.setText(title);
             MainActivity.this.sub.setText(sub);
             MainActivity.this.mSub2.setText(sub2);
             MainActivity.this.mProgressPercent.setText(progressPercent);
@@ -454,11 +453,7 @@ public class MainActivity extends Activity {
             MainActivity.this.lastCheckedHeader
                 .setText(lastCheckedText.equals("") ? "" : getString(R.string.text_last_checked_header_title));
             MainActivity.this.extra.setText(extraText);
-            MainActivity.this.lastCheckedHeader
-                .setText(lastCheckedText.equals("") ? "" : getString(R.string.text_last_checked_header_title));
             MainActivity.this.downloadSize.setText(downloadSizeText);
-            MainActivity.this.downloadSizeHeader
-                .setText(downloadSizeText.equals("") ? "" : getString(R.string.text_download_size_header_title));
 
             mProgressCurrent = (int) current;
             mProgressMax = (int) total;
