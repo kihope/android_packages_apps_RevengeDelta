@@ -1,6 +1,7 @@
 /* 
  * Copyright (C) 2013-2014 Jorrit "Chainfire" Jongma
  * Copyright (C) 2013-2015 The OmniROM Project
+ * Copyright (C) 2018-2019 Revenge OS
  */
 /* 
  * This file is part of OpenDelta.
